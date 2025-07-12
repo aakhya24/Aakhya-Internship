@@ -1,0 +1,130 @@
+/* Fonts & Base Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1d1c;
+  color: #f9efef;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  background-image: radial-gradient(rgba(239, 235, 235, 0.178)1px, transparent 1px);
+
+  background-size: 20px 20px;
+  background-position: center;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+header h1{
+  font-family: 'Great Vibes', cursive;
+  font-size:4rem;
+  margin-bottom:0.5rem;
+}
+header p{
+  font-family: 'Great Vibes', cursive;
+  font-size:2rem;
+  margin-bottom:0.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav {
+  background-color: #605e5e;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #0f0302;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.recipe {
+  background-color: #131212;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.recipe img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.subscribe-btn {
+  display: block;
+  margin: 30px auto;
+  background-color: #121111;
+  color: rgb(240, 233, 233);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #8f8786;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1d1b1b;
+  color: #555;
+}
+
+.recipe-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.recipe .text {
+  flex: 1 1 50%;
+}
+
+.recipe .image {
+  flex: 1 1 20%;
+}
+
+.recipe .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .recipe-content {
+    flex-direction: column;
+  }
+}
+
+.read-more-btn {
+  color: #e6e3e3;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 5px;
+}
