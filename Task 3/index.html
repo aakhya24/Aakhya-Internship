@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Skills Mastery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🚀 Web Skills Mastery</h1>
+      <p>Learn. Build. Repeat.</p>
+    </header>
+
+    <main>
+      <!-- Responsive Section -->
+      <section class="responsive">
+        <h2>📱 Responsive Design</h2>
+        <p>This layout adjusts smoothly across mobile, tablet, and desktop. Try resizing your browser window!</p>
+      </section>
+
+      <!-- Quiz Section -->
+      <section class="quiz">
+        <h2>🧠 Quick Quiz</h2>
+        <div id="quiz-box">
+          <p id="quiz-question"></p>
+          <div id="quiz-options"></div>
+          <button id="next-btn">Next</button>
+          <p id="score"></p>
+        </div>
+      </section>
+
+      <!-- Image Carousel -->
+      <section class="carousel">
+        <h2>🎞️ Image Carousel</h2>
+        <div class="slider">
+          <img id="carousel-img" src="https://picsum.photos/600/300?random=1" alt="Carousel Image">
+          <div class="slider-controls">
+            <button onclick="prevImage()">←</button>
+            <button onclick="nextImage()">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- API Section -->
+      <section class="api">
+        <h2>🌦️ Weather Info</h2>
+<input type="text" id="cityInput" placeholder="Try: delhi, mumbai, bengaluru..." />
+        <button onclick="fetchWeather()">Get Weather</button>
+        <div id="weather-result"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Designed for Practice</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 2:Contact Form and To-do list</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌸 Welcome to My Website 🌸</h1>
+    </header>
+
+    <main>
+      <!-- Contact Form Section -->
+      <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label>Name:
+            <input type="text" id="name" required />
+          </label>
+          <label>Email:
+            <input type="email" id="email" required />
+          </label>
+          <label>Password:
+            <input type="password" id="password" required />
+          </label>
+          <label>Message:
+            <textarea id="message" required></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+      </section>
+
+      <!-- To-Do + Gallery Section -->
+      <section id="taskGallery" class="content-section hidden">
+
+        <div class="grid-two">
+          <!-- To-Do List -->
+          <div class="todo">
+            <h2>My To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Enter a task" />
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+          </div>
+
+          <!-- Image Gallery -->
+          <div class="gallery">
+            <h2>Image Gallery</h2>
+            <input type="file" id="imageFile" accept="image/*" />
+            <button onclick="addImage()">Add Image</button>
+            <div id="imageList" class="image-container"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Back Button -->
+<button class="back-btn-floating" onclick="goBack()" style="display: none;">← Back</button>
+    </main>
+    <footer>
+      <p>&copy; 🌸 2025 Aakhya Sinha 🌸</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
